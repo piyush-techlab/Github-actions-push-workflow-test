@@ -1,24 +1,4 @@
-name: test
-on: push
 
-jobs:
-  test:
-    run-on: ubuntu-latest
-
-    steps: 
-      - name: Get code
-        uses: actions/checkout@v6
-      
-      - name: Install NodeJS
-        uses:  actions/setup-node@v6
-        with: 
-          node-version: 18
-      
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Run test
-        run: npm test
 
       
 
